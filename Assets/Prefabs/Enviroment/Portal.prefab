@@ -3990,9 +3990,49 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 1000000014000000150000001600000011000000
+  m_SelectedEdges:
+  - a: 64
+    b: 65
+  - a: 65
+    b: 66
+  - a: 67
+    b: 64
+  - a: 66
+    b: 67
+  - a: 80
+    b: 81
+  - a: 81
+    b: 82
+  - a: 83
+    b: 80
+  - a: 82
+    b: 83
+  - a: 84
+    b: 85
+  - a: 85
+    b: 86
+  - a: 87
+    b: 84
+  - a: 86
+    b: 87
+  - a: 91
+    b: 88
+  - a: 88
+    b: 89
+  - a: 90
+    b: 91
+  - a: 89
+    b: 90
+  - a: 68
+    b: 69
+  - a: 69
+    b: 70
+  - a: 71
+    b: 68
+  - a: 70
+    b: 71
+  m_SelectedVertices: 4000000041000000420000004300000050000000510000005200000053000000540000005500000056000000570000005b00000058000000590000005a00000044000000450000004600000047000000
 --- !u!64 &4059255362087947857
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4033,7 +4073,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6747247154433028560}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
-  m_LocalPosition: {x: -2.534, y: 1.898, z: -2}
+  m_LocalPosition: {x: -2.534, y: 1.532, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4059255362087947868}
@@ -4175,7 +4215,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4667,7 +4707,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 52.1
+    angle: 74.2
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 0
@@ -7684,7 +7724,7 @@ ParticleSystem:
     m_EnergyLossOnCollision:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 0
       maxCurve:
         serializedVersion: 2
