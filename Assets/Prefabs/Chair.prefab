@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &7526130988843012258
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879974602000366065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!65 &27521029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23,22 +37,22 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: dbb9fbbe59e19b84697930d535f8a66c,
         type: 3}
       propertyPath: m_Name
-      value: chair Variant
+      value: Chair
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dbb9fbbe59e19b84697930d535f8a66c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.7625331
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dbb9fbbe59e19b84697930d535f8a66c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.519754e-17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dbb9fbbe59e19b84697930d535f8a66c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.287316
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dbb9fbbe59e19b84697930d535f8a66c,
         type: 3}
@@ -82,6 +96,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbb9fbbe59e19b84697930d535f8a66c, type: 3}
+--- !u!1 &2879974602000366065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: dbb9fbbe59e19b84697930d535f8a66c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6113166668294234360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8645771142303849580 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2534866581884222612, guid: dbb9fbbe59e19b84697930d535f8a66c,
