@@ -7,10 +7,13 @@ public class FPController : MonoBehaviour
     [SerializeField] private Camera playerCamera;
 
     [SerializeField] private float speed=5f;
+
+    private Rigidbody _rigidbody;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -26,7 +29,7 @@ public class FPController : MonoBehaviour
         float z = Input.GetAxis("Vertical");
         x *= Time.deltaTime;
         z *= Time.deltaTime;
-        transform.Translate(x*speed,0,z*speed);
+        _rigidbody.MovePosition(new Vector3(gameObject.transform.position.x+x*speed, gameObject.transform.position.y, gameObject.transform.position.z + z * speed));
         Debug.Log(x+","+z);
     }
 
