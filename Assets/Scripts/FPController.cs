@@ -14,6 +14,13 @@ public class FPController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Movement();
+    }
+
+    private void Movement()
+    {
+        float x = Input.GetAxis("Horizontal");
+        float y = Input.GetAxis("Vertical");
+        Debug.Log(x+","+y);
     }
 }
