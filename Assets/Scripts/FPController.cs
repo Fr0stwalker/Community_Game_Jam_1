@@ -20,7 +20,11 @@ public class FPController : MonoBehaviour
     void Update()
     {
         Movement();
-        RotateCameraWithMouse();
+        //RotateCameraWithMouse(); // Add rotating camera with mouse
+        //Add ability to go up slopes
+        //Different speed and running
+        //Jumping
+        //Air Control
         ChangeCursorMode();
     }
 
