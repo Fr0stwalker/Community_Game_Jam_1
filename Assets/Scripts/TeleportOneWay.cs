@@ -9,7 +9,7 @@ public class TeleportOneWay : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<FPController>())
+        if (other.CompareTag("Player")) // TODO:Change back to getcomponent
         {
             other.transform.position = teleportExit.position;
         }
