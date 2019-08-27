@@ -20,7 +20,13 @@ public class FPController : MonoBehaviour
     void Update()
     {
         Movement();
+        RotateCameraWithMouse();
         ChangeCursorMode();
+    }
+
+    private void RotateCameraWithMouse()
+    {
+        
     }
 
     private void Movement()
