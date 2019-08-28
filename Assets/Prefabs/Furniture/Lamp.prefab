@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4101951112282791041}
+  - component: {fileID: 5071895860252810237}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
@@ -31,6 +32,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &5071895860252810237
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060130511511662226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.23
+  m_Height: 1.6027751
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.7769345, z: 0}
 --- !u!1 &6825800873726987023
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,9 +57,8 @@ GameObject:
   - component: {fileID: 5801710556454850489}
   - component: {fileID: 6540090362917346154}
   - component: {fileID: 2585544755273906074}
-  - component: {fileID: 6825800873726987022}
   m_Layer: 0
-  m_Name: default
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,17 +124,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &6825800873726987022
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6825800873726987023}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.23
-  m_Height: 1.6027751
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.7769345, z: 0}

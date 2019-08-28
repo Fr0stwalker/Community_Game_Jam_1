@@ -19,6 +19,10 @@ public class Interaction : MonoBehaviour
         {
             if (hit.transform.CompareTag("Interactive"))
             {
+                if (hit.transform.GetComponent<Outline>())
+                {
+                    hit.transform.GetComponent<Outline>().lookedAt = true;
+                }
                 Debug.Log(hit.transform.name + " was hovered over");
             }
         }
