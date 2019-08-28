@@ -11,7 +11,17 @@ public class TeleportOneWay : MonoBehaviour
     {
         if (other.GetComponent<FPController>())
         {
-            other.transform.position = teleportExit.position;
+            Teleport(other);
         }
+    }
+
+    private void Interact()
+    {
+        Teleport(FindObjectOfType<FPController>().GetComponent<Collider>());
+    }
+
+    private void Teleport(Collider other)
+    {
+        other.transform.position = teleportExit.position;
     }
 }

@@ -92,6 +92,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outline: {fileID: 1601287217}
   lookedAt: 0
+--- !u!114 &1588826366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389694926343754557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf34f9f6af18f7a4a83ff181812e6093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportExit: {fileID: 0}
 --- !u!1001 &6743706529719556475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102,7 +115,7 @@ PrefabInstance:
     - target: {fileID: 6412576265665464902, guid: b91abbee516ff9d429c7e847f03ab887,
         type: 3}
       propertyPath: m_Name
-      value: Door Interactive
+      value: Door Interactive Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6412576265665464902, guid: b91abbee516ff9d429c7e847f03ab887,
         type: 3}
@@ -112,17 +125,17 @@ PrefabInstance:
     - target: {fileID: 7972873254094354517, guid: b91abbee516ff9d429c7e847f03ab887,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.169803
+      value: 0.589201
       objectReference: {fileID: 0}
     - target: {fileID: 7972873254094354517, guid: b91abbee516ff9d429c7e847f03ab887,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.06648436e-16
+      value: -1.06722095e-16
       objectReference: {fileID: 0}
     - target: {fileID: 7972873254094354517, guid: b91abbee516ff9d429c7e847f03ab887,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.934
+      value: 4.8063354
       objectReference: {fileID: 0}
     - target: {fileID: 7972873254094354517, guid: b91abbee516ff9d429c7e847f03ab887,
         type: 3}
@@ -163,11 +176,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 644655267303108571, guid: b91abbee516ff9d429c7e847f03ab887,
-        type: 3}
-      propertyPath: m_Name
-      value: Model
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b91abbee516ff9d429c7e847f03ab887, type: 3}

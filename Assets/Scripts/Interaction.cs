@@ -9,10 +9,22 @@ public class Interaction : MonoBehaviour
     [SerializeField] private float range=10f;
     private void Update()
     {
-        ProcessRaycast();
+        RaycastHit hit = ProcessRaycast();
+        if (Input.GetButtonDown("Interact"))
+        {
+            Interact(hit);
+        }
     }
 
-    private void ProcessRaycast()
+    private void Interact(RaycastHit hit)
+    {
+        if (hit.transform.CompareTag("Interactive"))
+        {
+            hit.transform.gameObject.SendMessage("Interact");
+        }
+    }
+
+    private RaycastHit ProcessRaycast()
     {
         RaycastHit hit;
         if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out hit, range))
@@ -26,5 +38,7 @@ public class Interaction : MonoBehaviour
                 Debug.Log(hit.transform.name + " was hovered over");
             }
         }
+
+        return hit;
     }
 }
