@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Sandbox/Sandbox Ikuti.unity
+    guid: b94e0084dc06f664ba9f975260bfcad1
+  - enabled: 1
     path: Assets/Scenes/Start Screen.unity
     guid: e246d8224d47b9648b2f0571a8284cbe
   - enabled: 1
