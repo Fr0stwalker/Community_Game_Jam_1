@@ -26,7 +26,7 @@ public class Interaction : MonoBehaviour
 
     private void DropItem()
     {
-        
+        hasItem = false;
     }
 
     private void Interact(RaycastHit hit)
