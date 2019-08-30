@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 3289225449356006701, guid: b862dad181ea35f41ad36bbd5099be0c,
         type: 3}
       propertyPath: m_Name
-      value: SofaRB
+      value: SofaRB Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2017318816775464766, guid: b862dad181ea35f41ad36bbd5099be0c,
         type: 3}
@@ -82,6 +82,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8727804361147212451, guid: b862dad181ea35f41ad36bbd5099be0c,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b862dad181ea35f41ad36bbd5099be0c, type: 3}

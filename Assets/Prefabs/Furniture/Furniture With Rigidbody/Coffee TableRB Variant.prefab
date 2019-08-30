@@ -26,7 +26,12 @@ PrefabInstance:
     - target: {fileID: 8471623079507422313, guid: deeb147370ab7f34086f23f0bfd8e1d3,
         type: 3}
       propertyPath: m_Name
-      value: Coffee TableRB
+      value: Coffee TableRB Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259346010246661205, guid: deeb147370ab7f34086f23f0bfd8e1d3,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4884744880198033018, guid: deeb147370ab7f34086f23f0bfd8e1d3,
         type: 3}

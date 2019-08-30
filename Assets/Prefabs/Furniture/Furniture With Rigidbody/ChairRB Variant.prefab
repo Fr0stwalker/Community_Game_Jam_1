@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 5742088868379314911, guid: e50424bed8ae7234a80bfc061718432f,
         type: 3}
       propertyPath: m_Name
-      value: ChairRB
+      value: ChairRB Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8787832115597129932, guid: e50424bed8ae7234a80bfc061718432f,
         type: 3}
@@ -82,6 +82,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877941602634210868, guid: e50424bed8ae7234a80bfc061718432f,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e50424bed8ae7234a80bfc061718432f, type: 3}

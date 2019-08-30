@@ -26,7 +26,7 @@ PrefabInstance:
     - target: {fileID: 5684317638411470298, guid: a16e24d4a79885f4bbb94f8e3d9ee122,
         type: 3}
       propertyPath: m_Name
-      value: TableRB
+      value: TableRB Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8699152511846987721, guid: a16e24d4a79885f4bbb94f8e3d9ee122,
         type: 3}
@@ -82,6 +82,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245146553228757, guid: a16e24d4a79885f4bbb94f8e3d9ee122, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a16e24d4a79885f4bbb94f8e3d9ee122, type: 3}
