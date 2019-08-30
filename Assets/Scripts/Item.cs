@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    enum ItemType
+    public enum ItemType
     {
+        None,
         Key,
         Spoon,
         Fork,
         Knife
     }
 
-    [SerializeField] private ItemType itemType;
+    [SerializeField] public ItemType itemType;
 }
