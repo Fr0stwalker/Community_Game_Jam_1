@@ -7,6 +7,7 @@ public class FPController : MonoBehaviour
     [SerializeField] private Camera playerCamera;
 
     [SerializeField] private float speed=5f;
+    [SerializeField] private float runningSpeed = 10f;
     [SerializeField] private float XSensitivity = 2f;
     [SerializeField] private float YSensitivity = 2f;
     private Rigidbody _rigidbody;
@@ -14,6 +15,8 @@ public class FPController : MonoBehaviour
     private Quaternion _CameraTargetRot;
 
     private Vector3 movement;
+
+    private float currentSpeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,10 +29,16 @@ public class FPController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            currentSpeed = runningSpeed;
+        }
+        else
+        {
+            currentSpeed = speed;
+        }
         Movement();
-        RotateCameraWithMouse(); // Add rotating camera with mouse
-        //Add ability to go up slopes
-        //Different speed and running
+        RotateCameraWithMouse();
         //Jumping
         //Air Control
         ChangeCursorMode();
@@ -56,7 +65,7 @@ public class FPController : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
         movement.Set(x,0f,y);
-        movement = movement.normalized * speed * Time.deltaTime;
+        movement = movement.normalized * currentSpeed * Time.deltaTime;
         movement = transform.worldToLocalMatrix.inverse * movement;
         _rigidbody.MovePosition(transform.position+movement);
         //transform.localPosition += transform.right * x;
