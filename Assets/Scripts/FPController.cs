@@ -47,7 +47,6 @@ public class FPController : MonoBehaviour
     private void RotateCameraWithMouse()
     {
         float oldYRotation = transform.eulerAngles.y;
-        //mouseLook.LookRotation(transform, playerCamera.transform);
         float yRot = Input.GetAxis("Mouse X") * XSensitivity;
         float xRot = Input.GetAxis("Mouse Y") * YSensitivity;
 
@@ -68,9 +67,6 @@ public class FPController : MonoBehaviour
         movement = movement.normalized * currentSpeed * Time.deltaTime;
         movement = transform.worldToLocalMatrix.inverse * movement;
         _rigidbody.MovePosition(transform.position+movement);
-        //transform.localPosition += transform.right * x;
-        //transform.localPosition += transform.forward * y;
-        //_rigidbody.MovePosition(new Vector3(transform.right * x, gameObject.transform.position.y, gameObject.transform.position.z + z * speed));
     }
 
     private static void ChangeCursorMode()
