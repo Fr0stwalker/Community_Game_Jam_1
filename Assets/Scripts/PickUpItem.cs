@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class PickUpItem : MonoBehaviour
 {
-
+    private void PickUp()
+    {
+        Debug.Log("Picked up");
+    }
 }
