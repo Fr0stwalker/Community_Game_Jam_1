@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Outline : MonoBehaviour
 {
-    [SerializeField] private GameObject outline;
+    [SerializeField] public GameObject outline;
     public bool lookedAt;
 
     // Update is called once per frame

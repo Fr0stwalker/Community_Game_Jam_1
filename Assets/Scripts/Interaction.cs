@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
+    private bool _hasItem;
     public bool hasItem;
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float range=10f;
+    [SerializeField] private GameObject itemInHand;
     private void Update()
     {
         RaycastHit hit = ProcessRaycast();
@@ -26,6 +28,10 @@ public class Interaction : MonoBehaviour
 
     private void DropItem()
     {
+        GameObject actualItem = itemInHand.transform.GetChild(0).gameObject;
+        actualItem.transform.parent = null;
+        actualItem.GetComponent<Rigidbody>().isKinematic = false;
+        actualItem.GetComponent<Outline>().enabled = true;
         hasItem = false;
     }
 
