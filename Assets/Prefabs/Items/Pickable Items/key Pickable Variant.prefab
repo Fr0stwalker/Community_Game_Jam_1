@@ -104,6 +104,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outline: {fileID: 1780402923}
   lookedAt: 0
+--- !u!114 &2247692662562195927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095903232972416300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef1f2e915d8c9784193ba42b4032812c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 0
 --- !u!1001 &1104042605521327256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -114,7 +127,7 @@ PrefabInstance:
     - target: {fileID: 1316313350708605364, guid: 7d6400e6964070e43857c8c72b8e5669,
         type: 3}
       propertyPath: m_Name
-      value: key Pickable
+      value: key Pickable Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1316313350708605364, guid: 7d6400e6964070e43857c8c72b8e5669,
         type: 3}
