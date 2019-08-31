@@ -6,7 +6,7 @@ using UnityEngine;
 public class Interaction : MonoBehaviour
 {
     private bool _hasItem;
-    public bool hasItem;
+    public bool hasItem = false;
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float range=10f;
     [SerializeField] private GameObject itemInHand;

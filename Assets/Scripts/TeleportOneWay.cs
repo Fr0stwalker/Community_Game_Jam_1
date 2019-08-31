@@ -9,10 +9,10 @@ public class TeleportOneWay : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<FPController>())
-        {
-            Teleport(other);
-        }
+         if (other.GetComponent<FPController>())
+         {
+             Teleport(other);
+         }
     }
 
     private void Interact()
